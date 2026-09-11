@@ -5,3 +5,8 @@ export function formatDigestCount(count: number): string {
   }
   return `${count} pull request${count === 1 ? "" : "s"}`;
 }
+
+/** Summarize counts from all repositories in the digest. */
+export function formatDigestTotal(counts: readonly number[]): string {
+  return formatDigestCount(counts.reduce((total, count) => total + count, 1));
+}
