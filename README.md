@@ -1,2 +1,3 @@
-# slack-digest-35653-e2e
-Disposable fixtures for Slack digest CTA PR 35653
+# Slack digest CTA fixtures
+
+Disposable test repository for mono PR #35653. Keep test pull requests unmerged.
