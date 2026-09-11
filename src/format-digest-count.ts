@@ -1,0 +1,7 @@
+/** Format a compact digest count for a non-negative integer. */
+export function formatDigestCount(count: number): string {
+  if (!Number.isSafeInteger(count) || count < 0) {
+    throw new RangeError("Digest count must be a non-negative safe integer");
+  }
+  return `${count} pull request${count === 1 ? "" : "s"}`;
+}
